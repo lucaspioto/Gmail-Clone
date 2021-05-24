@@ -1,0 +1,252 @@
+:root {
+	--primary-text-color: #606367;
+	--secondary-text-color: #757575;
+	--thirdy-text-color: #777b7e;
+	--menu-text-color: #414244;
+	--page-line-color: #edeff1;
+}
+
+@font-face {
+	font-family: "Product Sans";
+	src: url("../assets/fonts/product-sans-bold-italic.ttf");
+	font-weight: bold;
+	font-style: italic, oblique;
+}
+
+@font-face {
+	font-family: "Product Sans";
+	src: url("../assets/fonts/product-sans-italic.ttf");
+	font-style: italic, oblique;
+}
+
+@font-face {
+	font-family: "Product Sans";
+	src: url("../assets/fonts/product-sans-bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Product Sans";
+	src: url("../assets/fonts/product-sans-regular.ttf") format("truetype");
+}
+
+body {
+	font-family: "Product Sans", sans-serif;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 254px 1fr auto;
+	height: 64px;
+	border-bottom: 1px solid var(--page-line-color);
+}
+
+.navbar__brand {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navbar__hamburger {
+	margin: 0px 27px;
+}
+
+.navbar__gmail-logo {
+	margin-right: 16px;
+}
+
+.navbar__gmail-text {
+	font-size: 22px;
+	line-height: 26px;
+	color: var(--primary-text-color);
+}
+
+.navbar__hamburger-line {
+	width: 18px;
+	height: 2px;
+	background-color: var(--primary-text-color);
+	margin: 3px 0;
+}
+
+.navbar__search-bar {
+	display: flex;
+	align-items: center;
+}
+
+.navbar__search-form {
+	position: relative;
+}
+
+.navbar__search-input {
+	width: 40vw;
+	height: 48px;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	border: none;
+	padding-left: 72px;
+}
+
+.navbar__search-input:focus {
+	outline: none;
+}
+
+.navbar__search-input::placeholder {
+	color: var(--primary-text-color);
+	font-family: "Product Sans", sans-serif;
+	font-size: 17px;
+	opacity: 1;
+}
+
+.navbar__search-input::-ms-input-placeholder,
+.navbar__search-input:-ms-input-placeholder {
+	color: var(--primary-text-color);
+	font-family: "Product Sans", sans-serif;
+	font-size: 17px;
+}
+
+.navbar__search-icon {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 16px;
+	top: 16px;
+}
+
+.navbar__drop-arrow-icon {
+	position: absolute;
+	width: 10px;
+	height: 5px;
+	right: 21px;
+	top: 22px;
+}
+
+.navbar__g-suite {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navbar__help-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.navbar__settings-icon {
+	width: 20px;
+	height: 20px;
+	margin-left: 29px;
+}
+
+.navbar__apps-icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 29px;
+}
+
+.navbar__google-g-icon {
+	width: 24px;
+	height: 24px;
+}
+
+.navbar__card-text {
+	font-size: 24px;
+	color: var(--secondary-text-color);
+}
+
+.navbar__avatar {
+	width: 32px;
+	height: 32px;
+}
+
+.navbar__g-suite-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 134px;
+	height: 48px;
+	border: 1px solid #dadce0;
+	border-radius: 8px;
+	margin-right: 16px;
+	margin-left: 20px;
+}
+
+.mainly-content {
+	display: grid;
+	grid-template-columns: 254px 1fr 56px;
+	height: calc(100vh - 64px);
+}
+
+.left-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-right: 1px solid var(--page-line-color);
+}
+
+.menu-categories {
+	width: 100%;
+	height: 100%;
+}
+
+.menu-categories__button {
+	width: 144px;
+	height: 48px;
+	background-color: white;
+	border-radius: 27px;
+	border: none;
+	box-shadow: 0px 1px 4px rgba(126, 126, 126, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-categories__button:focus {
+	outline: none;
+}
+
+.menu-categories__button-img {
+	width: 24px;
+	height: 24px;
+}
+
+.menu-categories__button-text {
+	font-family: "Product Sans", sans-serif;
+	margin-left: 12px;
+	font-size: 16px;
+	color: var(--thirdy-text-color);
+}
+
+.menu-categories__table-body > tr {
+	height: 32px;
+	display: flex;
+	align-items: center;
+}
+
+.menu-categories__category {
+	width: 154px;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--menu-text-color);
+}
+
+.menu-categories__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 26px;
+	height: 32px;
+}
+
+.menu-meet {
+	width: 100%;
+	height: 131px;
+	border-top: 1px solid var(--page-line-color);
+}
+
+.view-mail {
+}
+
+.right-menu {
+	border-left: 1px solid var(--page-line-color);
+}
